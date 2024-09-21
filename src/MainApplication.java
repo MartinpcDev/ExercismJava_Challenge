@@ -1,10 +1,9 @@
-import carsassemble.CarsAssemble;
+import loglevels.LogLevels;
 
 public class MainApplication {
 
   public static void main(String[] args) {
-    CarsAssemble carsAssemble = new CarsAssemble();
-    System.out.println(carsAssemble.productionRatePerHour(1));
-    System.out.println(carsAssemble.workingItemsPerMinute(1));
+    String message = LogLevels.logLevel("[WARNING]:   \tTimezone not set\r\n");
+    System.out.println("'" + message + "'");
   }
 }
