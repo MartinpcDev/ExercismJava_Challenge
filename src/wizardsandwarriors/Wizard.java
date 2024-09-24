@@ -10,12 +10,12 @@ public class Wizard extends Fighter {
 
   @Override
   boolean isVulnerable() {
-    return !spell;
+    return !this.spell;
   }
 
   @Override
   int getDamagePoints(Fighter fighter) {
-    return spell ? 12 : 3;
+    return this.spell ? 12 : 3;
   }
 
   @Override
