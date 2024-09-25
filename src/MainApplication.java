@@ -1,9 +1,11 @@
-import salarycalculator.SalaryCalculator;
+import loglevels.LogLine;
 
 public class MainApplication {
 
   public static void main(String[] args) {
-    SalaryCalculator calculator = new SalaryCalculator();
-    System.out.println(calculator.finalSalary(0, 77));
+    LogLine logLine = new LogLine("[TRC]: Line 84 - System.out.println(\\\"Hello World\\\");");
+    System.out.println(logLine.getLogLevel());
+    System.out.println(logLine.getOutputForShortLog());
   }
+
 }
